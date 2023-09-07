@@ -39,9 +39,7 @@
           <li class="nav-item">
             <a class="nav-link" href="addmission.jsp">Addmission</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="notice.jsp">Notice</a>
-          </li>
+      
           <li class="nav-item">
             <a class="nav-link" href="about.jsp">Abouttt</a>
           </li>
