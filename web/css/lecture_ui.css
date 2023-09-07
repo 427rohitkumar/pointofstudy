@@ -1,0 +1,53 @@
+.main-container{
+   height: 100vh;
+}
+
+.main-row{
+    height: 100%;
+}
+
+#left-menu{
+    height: 100%;
+    /* border: 1px solid yellow; */
+    background-color: #15628f;
+}
+#right-main-coldiv{
+    height: 100%;
+    border: 1px solid gray;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-color:blue;
+}
+
+/*#main-default-con{
+    display: none;
+}*/
+
+#video-con{
+    display: none;
+}
+
+#courselist-main-div{
+    height: 70%;
+    border: 1px solid white;
+}
+
+.courselist p{
+    color: white;
+    margin-top: 6px;
+    cursor: pointer;
+    
+}
+
+.courselist:hover{
+    background: #00aeff73;
+}
+
+#list{
+    display: none;
+}
+#list p:hover{
+    background: #00aeff73;
+   
+}
+
