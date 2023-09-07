@@ -24,72 +24,63 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="image/title.png " alt="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.jsp" >Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="addmission.jsp">Addmission</a>
-          </li>
-      
-          <li class="nav-item">
-            <a class="nav-link" href="about.jsp">About</a>
-          </li>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="image/title.png " alt="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.jsp" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="addmission.jsp">Addmission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.jsp">About</a>
+                    </li>
 
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        <div class="admin_login">
-          <button id="admin" onclick="popup('admin-popup')">Admin Login</button>
+                </ul>
+
+                <div class="admin_login">
+                    <button id="admin" onclick="popup('admin-popup')">Admin Login</button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    
-    
-    
-    <!-- student popup  -->
 
-  <div class="main-popup" id="login-popup">
-    <div class="sub-main">
-     <button id="cros" onclick="exit()"><i class="fa-solid fa-xmark"></i></button>
-      <div class="login-tex" id="logintex"><h3 class="text">Login</h3></div>
-      
-  
-    
-      <form action="LoginServlet"  method="post" class="form">
-          
-         
-          <label for="email">Email</label>
-          <input type="text" class="input" name="email"><br><br>
 
-          <label for="password">Password</label><br>
-          <input type="password" class="input" name="password"><br><br>
 
-          <input type="submit" value="Login" class="btn"><br>
-           <div class="forget">
-              <a href="#" style="text-align: center;">Forget Password</a>
-           </div>
-      </form>
-    </div>
+        <!-- student popup  -->
 
-  </div>
-     
-  </nav>
-  
-  
-  <div class="error-tex">
-          ${htmlContent}
-         </div> 
+        <div class="main-popup" id="login-popup">
+            <div class="sub-main">
+                <button id="cros" onclick="exit()"><i class="fa-solid fa-xmark"></i></button>
+                <div class="login-tex" id="logintex"><h3 class="text">Login</h3></div>
+
+
+
+                <form action="LoginServlet"  method="post" class="form">
+
+
+                    <label for="email">Email</label>
+                    <input type="text" class="input" name="email"><br><br>
+
+                    <label for="password">Password</label><br>
+                    <input type="password" class="input" name="password"><br><br>
+
+                    <input type="submit" value="Login" class="btn"><br>
+                    <div class="forget">
+                        <a href="#" style="text-align: center;">Forget Password</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </nav>
   
   <div class="main-container">
     <div class="icon">
@@ -97,10 +88,10 @@
     </div>
    
     <div class="lines">
-      <span style="color: rgb(0,0,0);font-size:60px;font-family:Monospace">
+      <span style="color: rgb(0,0,0);font-size:40px;font-family:Monospace">
         <strong>Want to</strong>
       </span>
-      <span style="color: rgb(102,116,204);font-size:40px">
+      <span style="color: rgb(102,116,204);font-size:60px">
         <strong>learn..!</strong>
       </span>
       <div class="login">
@@ -116,8 +107,17 @@
       
     <div class="lower">
       <div class="main-heading">
-        <span>Boots Your knowledge Get the Best opportunities</span>
+        <span style="color: rgb(0,0,0);font-size:40px;font-family:Monospace">
+        <strong>Guiding You At Every</strong>
+      </span>
+      <span style="color: orange;font-size:120px">
+        <strong>Step!</strong>
+      </span>
       </div>
+         <div class="descript-line">
+               <p>Our Top Mentors show you the way, <br/>
+              to becoming a thorough professional!</p>
+          </div>
       <div class="main-box">
         <div class="box1">
           <img src="image/box_img.png" alt="#">

@@ -141,8 +141,13 @@ body{
     
 } 
 
-
-
+descript-line{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    border: 2px solid;
+    
+}
 
 
 
@@ -185,12 +190,13 @@ body{
 
 
 .pg1{
-    color: white;
+    
     padding: 20px;
     font-size: 20px;
 }
 
 .pg1 p{
+    color: white;
     font-size: 15px;
 }
 
@@ -250,8 +256,6 @@ body{
 .section1{
     width: 200px;
     height: 400px;
-    /* margin-right: 50%;
-    margin-bottom: 100px; */
 }
 
 
@@ -289,7 +293,6 @@ body{
 }
 
 .login-tex{
-    /* border: 2px solid red; */
     width: 100%;
 }
 .text {
