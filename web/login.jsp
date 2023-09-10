@@ -88,21 +88,10 @@
                 <li class="nav-item">
                   <a class="nav-link" href="addmission.html">Addmission</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="notice.html">Notice</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="about.html">About</a>
                 </li>
       
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-              <div class="admin_login">
-                <button id="admin" onclick="popup('admin-popup')">Admin Login</button>
-              </div>
             </div>
           </div>
         </nav>

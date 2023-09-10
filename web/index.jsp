@@ -172,11 +172,6 @@
       <div class="footer-line">
         <p>@copyright point of study</p>
       </div>
-      <div class="footer">
-        <a href="https://www.youtube.com/channel/UCTQEWDZBueqyi-l8KXvwxYQ" target="_blank" class="fa fa-youtube"></a>
-        <a href="https://www.instagram.com/shivamsingh2346/" target="_blank" class="fa fa-instagram"></a>
-        <a href="https://www.youtube.com/channel/UCTQEWDZBueqyi-l8KXvwxYQ" target="_blank" class="fa fa-facebook"></a>
-      </div>
     </div>
   </div>
 
