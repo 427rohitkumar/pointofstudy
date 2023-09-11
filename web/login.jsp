@@ -88,9 +88,11 @@
                 <li class="nav-item">
                   <a class="nav-link" href="addmission.html">Addmission</a>
                 </li>
+
                   <a class="nav-link" href="about.html">About</a>
                 </li>
       
+
               </ul>
             </div>
           </div>

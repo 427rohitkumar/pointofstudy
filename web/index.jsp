@@ -24,6 +24,7 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="image/title.png " alt="#"></a>
@@ -49,7 +50,6 @@
                     <button id="admin" onclick="popup('admin-popup')">Admin Login</button>
                 </div>
             </div>
-        </div>
 
 
 
