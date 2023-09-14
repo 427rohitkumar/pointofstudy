@@ -1,6 +1,13 @@
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="com.pointofstudy.dao.VideoDao"%>
+<%@page import="java.util.*"%>
+<%@page import="com.pointofstudy.entities.AllClasses"%>
+<%@page import="com.pointofstudy.helper.Myconnection"%>
+
+
+
 
 <!doctype html>
 <html lang="en">
@@ -87,12 +94,23 @@
         
         <div class="custom-select">
           <select name=class>
-            <option value="0">Select your class</option>
-            <option value=""8>8<sup>th</sup></option>
-            <option value="9">9<sup>th</sup></option>
-            <option value="10">10<sup>th</sup></option>
-            <option value="11">11<sup>th</sup></option>
-            <option value="12">12<sup>th</sup></option>
+              <option value="0" selected disabled>---Select your class---</option>
+              
+              <%
+                  VideoDao vd=new VideoDao(Myconnection.connect());
+                  ArrayList<AllClasses> cList=vd.getAllClasses();
+                  
+                   for(AllClasses c:cList)
+                   
+                   {
+                   
+                  
+                  %>
+              <option value="<%=c.getClass_id()%>"><%=c.getClasses()%></option>
+            
+              <%
+                  }
+                  %>
           </select>
         </div>
     

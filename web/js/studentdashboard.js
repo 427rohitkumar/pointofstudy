@@ -12,25 +12,44 @@ $(document).ready(function(){
         $("#left-menu").hide();
     });
     
-    $("#profile").on('click',function(){
-       
-        $("#profileSlide").slideToggle('fast');
-       
+//    left menu profile menu click function 
+    $("#profile-phone-view").on('click',function(){
+        $("#content-div").show();
+        $("#left-menu").hide();
     });
+    
+    // $("#profile").on('click',function(){
+       
+    //     $("#profileSlide").slideToggle('fast');
+       
+    // });
 
-    $("#tex-profile").on('click',function(){
-        $("#profileSlide").hide();
+    $("#profile").on('click',function(){
+        // $("#profileSlide").hide();
         $("#container").toggle();
         $("#videoCard-main-div").toggle();
 
     });
     
-      $("#xxmark").on('click',function(){
+      $("#profile-phone-view").on('click',function(){
+        // $("#profileSlide").hide();
+        $("#container").toggle();
+        $("#videoCard-main-div").toggle();
+
+    });
+    
+    $("#xmark").on('click',function(){
         $("#container").hide();
         $("#videoCard-main-div").show();
 
 
     });
-});
 
+    // $(document).click(function(){
+    //     $('#profileSlide:visible').hide();
+    // });
+
+
+  
+});
 

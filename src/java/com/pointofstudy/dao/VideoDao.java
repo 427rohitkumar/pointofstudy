@@ -5,6 +5,7 @@ import com.pointofstudy.entities.AllSubjects;
 import com.pointofstudy.entities.VideoPost;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class VideoDao {
     private Connection con;
@@ -87,5 +88,38 @@ public class VideoDao {
          }
          return f;
      }
+     
+     
+      public  List<VideoPost> getVideoPostByClassId(int class_id){
+        
+        List<VideoPost> list=new ArrayList<>();
+        
+          try{
+            PreparedStatement p=con.prepareStatement("select *from video_post where vId=?");
+            p.setInt(1,class_id);
+            ResultSet set=p.executeQuery();
+            
+            while(set.next()){
+                int vid=set.getInt("vId");
+                String vTitle=set.getString("vTitle");
+                String vdescription=set.getString("vDescription");
+                String vthumbnail=set.getString("vthumbnail");
+                String vVideo=set.getString("vVideo");
+                int classId=set.getInt("classId");
+                int subjectId=set.getInt("subjectId");
+
+                
+                VideoPost vpost=new VideoPost(vid, vTitle, vdescription, vthumbnail, vVideo,classId,subjectId);
+                list.add(vpost);
+            }
+        } 
+        catch(Exception e){
+            e.printStackTrace();
+        }
+      
+        
+        return list;
+    }
+   
     
 }
