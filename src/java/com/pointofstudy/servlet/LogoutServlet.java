@@ -19,7 +19,6 @@ import jakarta.servlet.http.HttpSession;
  */
 public class LogoutServlet extends HttpServlet {
 
-   
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -28,18 +27,18 @@ public class LogoutServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet LogoutServlet</title>");            
+            out.println("<title>Servlet LogoutServlet</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet LogoutServlet at " + request.getContextPath() + "</h1>");
-            
-            HttpSession session=request.getSession();
+
+            HttpSession session = request.getSession();
             session.removeAttribute("currentUser");
-            Message m=new Message("Lougout success","Success","alert-success");
+            Message m = new Message("Lougout success", "Success", "alert-success");
             session.setAttribute("msg", m);
-            response.sendRedirect("login.jsp");
-            
-            
+            response.sendRedirect("index.jsp");
+            out.println("<script>window.alert('Hello Rohit')</script>");
+
             out.println("</body>");
             out.println("</html>");
         }

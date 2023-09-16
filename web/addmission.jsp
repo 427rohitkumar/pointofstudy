@@ -106,7 +106,7 @@
                    
                   
                   %>
-              <option value="<%=c.getClass_id()%>"><%=c.getClasses()%></option>
+              <option value="<%=c.getClasses()%>"><%=c.getClasses()%></option>
             
               <%
                   }

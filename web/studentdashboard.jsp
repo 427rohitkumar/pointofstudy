@@ -140,7 +140,9 @@ if(user==null){
                         <div class="profilemenu-main col">
                             <div class="porfileItem">
                                 <span id="logout-profile">
+                                    <a href="LogoutServlet" style="color: white;text-decoration: none">
                                     <i class="fa-solid fa-square-caret-up"></i>&nbsp;&nbsp;Logout
+                                    </a>
                                 </span>
 
 
@@ -259,22 +261,22 @@ if(user==null){
                         <!-- profile starting -->
                         <div class="container-fluid p-3" id="container">
                             <span id="xmark"><i class="fa-solid fa-xmark"></i></span>
-                            <div class="row mt-5" id="row">
-                                <div class="col-md-4" id="col-1">
+                            <div class="row mt-3" id="row">
+<!--                                <div class="col-md-4" id="col-1">
 
                                     <img src="image/defaultprofile.jpg" class="img-thumbnail img-profile my-3"
                                          alt="...">
 
 
-                                </div>
+                                </div>-->
 
-                                <div class="col-md" id="col-2">
-                                    <div class="card my-3 profile-card" >
+                                <div class="col-md-9 m-auto" id="col-2" >
+                                    <div class="card my-3 profile-card " style=" box-shadow: 1px 2px 10px gray;" >
                                         <div class="card-body profile-card-body">
                                             <h5 class="card-title">
                                                 <h1>Profile Details..</h1>
                                             </h5>
-                                            <h6 class="card-subtitle mb-2 text-body-secondary ml-2">Hello Rohit Kuamr.</h6>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary ml-2">--------</h6>
 
 
                                             <!-- table body start -->

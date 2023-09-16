@@ -94,10 +94,7 @@
     display: none;
 }
 
-#logout-profile:hover{
-    color: rgb(255, 204, 0);
-    cursor: pointer;
-}
+
 
 
 #profile:hover{
@@ -169,7 +166,8 @@
 }
 
 #col-2 {
-    height:100%; 
+    height:100%;
+   
 }
 
 

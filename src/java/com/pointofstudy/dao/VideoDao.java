@@ -27,6 +27,8 @@ public class VideoDao {
             while(set.next()){
                 int subId=set.getInt("id");
                 String subject=set.getString("subject");
+//                System.out.println(subId);
+//                System.out.println(subject);
                 
                 AllSubjects sub=new AllSubjects(subId,subject);
                 subjectlist.add(sub);
@@ -76,7 +78,7 @@ public class VideoDao {
              stmt.setString(3, video.getVthumbnail());
              stmt.setString(4, video.getvVideo());
              stmt.setInt(5, video.getClassId());
-             stmt.setInt(6, video.getClassId());
+             stmt.setInt(6, video.getSubjectId());
              
              stmt.executeUpdate();
              f=true;
@@ -90,13 +92,13 @@ public class VideoDao {
      }
      
      
-      public  List<VideoPost> getVideoPostByClassId(int class_id){
+      public  List<VideoPost> getVideoPostByClassId(int studClass){
         
         List<VideoPost> list=new ArrayList<>();
         
           try{
             PreparedStatement p=con.prepareStatement("select *from video_post where vId=?");
-            p.setInt(1,class_id);
+            p.setInt(1,studClass);
             ResultSet set=p.executeQuery();
             
             while(set.next()){
